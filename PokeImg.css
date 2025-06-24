@@ -1,0 +1,161 @@
+/*テーブル2つの並び*/
+#mainContainer {
+    display: flex;
+    flex-direction: column; /* 縦並びに配置（ステータス + 素早さ補正） */
+    align-items: left; /* 全体を左揃え */
+}
+
+/*ステータステーブルと画像の並び*/
+#statsContainer {
+    display: flex;
+    flex-direction: row; /* 横並び（ステータス表 + 画像） */
+    align-items: flex-start; /* 上揃え */
+    gap: 20px; /* ステータス表と画像の間に余白 */
+}
+
+/*ステータステーブルの幅*/
+#statsTable {
+    width: 470px; /* テーブルの幅を調整 */
+}
+
+/*画像の位置*/
+#pokemonImageContainer {
+    width: 580px; /* 画像の大きさを調整 */
+}
+
+/*素早さ補正のテーブル*/
+#speedAdjustmentTable {
+    width: 470px;
+    margin-left: 0;
+    text-align: left;
+}
+
+/*素早さ補正のテーブル*/
+#speedAdjustmentTable select {
+    width: 100%; /* セルいっぱいに広げる */
+    font-size: 14px; /* 読みやすくする */
+    padding: 3px; /* クリックしやすく */
+    cursor: pointer;
+}
+
+/*素早さ補正の表*/
+#speedAdjustmentContainer {
+    margin-top: 20px; /* ステータス表の下に配置 */
+    width: 44%;
+    display: flex;
+    justify-content: flex-start; /* 左配置 */
+}
+
+/*画像の大きさ*/
+#pokemonImage {
+    width: 220px; /* 画像サイズを調整 */
+    height: auto;
+    border: 2px solid aquamarine; /* 枠を追加 */
+    background-color: white;
+}
+
+/*性格補正の矢印*/
+.natureIndicator {
+    font-weight: bold;
+    font-size: 16px; /* 文字を少し大きく */
+}
+
+/*残り努力値とリセットボタン*/
+#evContainer {
+    display: flex;
+    justify-content: space-between; /* 左端と右端に配置 */
+    align-items: center;
+    width: 100%; /* テーブルの幅と統一 */
+    position: relative; /* ボタンの固定に影響 */
+}
+
+/*残り努力値のとこ*/
+#remainingEVContainer {
+    flex-grow: 1; /* 左端に固定 */
+    text-align: left;
+    color: mediumblue;
+}
+
+/*リセットボタン*/
+#resetEV {
+    position: absolute; /* 固定配置 */
+    left: 397px; /* テーブルの右端に固定 */
+    top: 25%; /* 実数値のすぐ上に配置 */
+    padding: 5px 10px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    outline: 2px solid blue;
+}
+
+/*個体値、努力値のとこ*/
+input[type="number"] {
+    width: 60px; /* 幅を広げる */
+    height: 15px;
+    font-size: 16px; /* 文字を大きくして視認性アップ */
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    color: darkblue;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    cursor: pointer; /* 数値変更の矢印をポインターにする */
+}
+
+/*ポケモン検索欄*/
+input[type="text"] {
+    width: 275px; /* 幅を広げる */
+    height: 15px;
+    font-size: 16px; /* 文字を大きくして視認性アップ */
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    color: darkblue;
+}
+
+/*性格補正のとこ*/
+select {
+    width: 70%; /* セルの幅いっぱいに広げる */
+    height: 30px; /* クリックしやすくするために高さを調整 */
+    font-size: 15px; /* 文字を大きくして視認性アップ */
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+
+/*テーブル全体*/
+table {
+    border: 1px solid black; /* 黒い枠線を1pxの太さで表示 */
+    border-collapse: collapse; /* 枠線をスッキリさせる */
+    outline: 2px solid black;
+    width: 470px;
+}
+
+/*テーブルの比率*/
+th:first-child {
+    width: 20%;
+}
+
+th:nth-child(n+2) {
+    width: 16%;
+}
+
+th {
+    color: darkblue;
+    background-color: lightblue;
+    border: 1px solid black; /* 黒い枠線を1pxの太さで表示 */
+}
+
+td {
+    color: mediumblue;
+    background-color: aliceblue;
+    border: 1px solid black; /* 黒い枠線を1pxの太さで表示 */
+}
+
+h2 {
+    color: darkblue;
+    background-color: lightblue;
+}
