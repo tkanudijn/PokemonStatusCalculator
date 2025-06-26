@@ -19,7 +19,7 @@
 }*/
 #statsTable {
     width: 470px; /* テーブルの幅を調整 */
-    height: 300px; /* 高さを固定 */
+    height: 220px; /* 高さを固定 */
     overflow: auto; /* 内容が枠を超えた場合にスクロールバーを表示 */
 }
 
