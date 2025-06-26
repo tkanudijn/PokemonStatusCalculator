@@ -30,7 +30,7 @@
 }*/
 #pokemonImageContainer {
     width: 580px;
-    height: 300px; /* 枠の高さを固定 */
+    height: 220px; /* 枠の高さを固定 */
     overflow: hidden; /* はみ出した部分を隠す */
 }
 
