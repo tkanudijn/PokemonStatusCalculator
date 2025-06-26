@@ -20,7 +20,6 @@
 #statsTable {
     width: 470px; /* テーブルの幅を調整 */
     height: 220px; /* 高さを固定 */
-    overflow: auto; /* 内容が枠を超えた場合にスクロールバーを表示 */
 }
 
 
@@ -31,7 +30,6 @@
 #pokemonImageContainer {
     width: 580px;
     height: 220px; /* 枠の高さを固定 */
-    overflow: hidden; /* はみ出した部分を隠す */
 }
 
 /*素早さ補正のテーブル*/
