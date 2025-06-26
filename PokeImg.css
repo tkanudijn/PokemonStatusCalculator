@@ -18,9 +18,9 @@
     width: 470px;  テーブルの幅を調整 
 }*/
 #statsTable {
-    position: absolute; /* 固定配置 */
     width: 470px; /* テーブルの幅を調整 */
     height: 220px; /* 高さを固定 */
+    position: absolute; /* 固定配置 */
 }
 
 
