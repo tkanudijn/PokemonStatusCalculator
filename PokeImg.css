@@ -19,8 +19,8 @@
 }*/
 #statsTable {
     width: 470px; /* テーブルの幅を調整 */
+    right: 470px; /* テーブルの右端に固定 */
     height: 220px; /* 高さを固定 */
-    position: absolute; /* 固定配置 */
 }
 
 
